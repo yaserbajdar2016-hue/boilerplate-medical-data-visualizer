@@ -15,6 +15,7 @@ df["gluc"] = (df["gluc"] > 1).astype(int)
 
 
 def draw_cat_plot():
+
     # 4, 5
     df_cat = pd.melt(
         df,
@@ -37,11 +38,11 @@ def draw_cat_plot():
         kind="bar"
     ).fig
 
-    # 8
     return fig
 
 
 def draw_heat_map():
+
     # 10, 11
     df_heat = df[
         (df["ap_lo"] <= df["ap_hi"]) &
